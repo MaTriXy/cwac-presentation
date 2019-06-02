@@ -8,10 +8,15 @@ repositories {
 
 dependencies {
     debugImplementation project(':presentation')
-    releaseImplementation 'com.commonsware.cwac:presentation:0.5.+'
+    releaseImplementation 'com.commonsware.cwac:presentation.x:0.6.1'
+    implementation "androidx.appcompat:appcompat:1.0.0"
 }
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.2"
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 28
+    }
 }

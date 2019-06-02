@@ -7,12 +7,12 @@ repositories {
 }
 
 dependencies {
-    api 'com.commonsware.cwac:layouts:0.4.3'
+    api "com.commonsware.cwac:layouts:0.4.3"
+    api "androidx.fragment:fragment:1.0.0"
 }
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.2"
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 17
